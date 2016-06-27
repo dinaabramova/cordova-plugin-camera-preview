@@ -175,11 +175,10 @@ public class CameraPreview extends CordovaPlugin implements CameraActivity.Camer
                     }
                     else{
                         //set camera back to front
-                        containerView.setAlpha(Float.parseFloat(args.getString(8)));
+                        containerView.setAlpha(Float.parseFloat(0));
                         containerView.bringToFront();
                     }
 
-                    containerView.setVisibility(View.INVISIBLE);
                     //add the fragment to the container
                     FragmentManager fragmentManager = cordova.getActivity().getFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
